@@ -5,41 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+    <h1>Một só phép tính cơ bản.</h1>
+
+    <h2>Ta lấy a = 5; b = 10.</h2>
 <body>
     
-    <script>
+    <p>Phép cộng:</p>
+    <p id="demo"></p>
+        <script>
+            var a = 5;
+            var b = 10;
+            var c = a + b;
 
-        var a; 
-        let b;
-        var c;
+            document.getElementById("demo").innerHTML =
+            "c = a + b" + "<br>" + "--> c = " + c;
+        </script>
 
+    <p>Phép trừ:</p>
+    <p id="demo1"></p>
+        <script>
+            var a = 5;
+            var b = 10;
+            var d = a - b;
 
-        a = 5;
-        b = 10;
-        c = a + b;
+            document.getElementById("demo1").innerHTML =
+            "d = a - b" + "<br>" + "--> d = " + d;
+        </script>
 
-        console.log(a);
-        console.log(b);
-        console.log(c);
-
-        a = 50;
-        b = 100;
-        d = a - b;
-        e = a * b;
-        f = a/b;
+    <p>Phép nhân:</p>
+    <p id="demo2"></p>
+        <script>
+            var a = 5;
+            var b = 10;
+            var e = a * b;
     
-        console.log(a);
-        console.log(b);
-        console.log(d);
-        console.log(e);
-        console.log(f);
+            document.getElementById("demo2").innerHTML =
+            "e = a * b" + "<br>" + "--> e = " + e;
+        </script>
+
+    <p>Phép chia:</p>
+    <p id = "demo3"></p>
+        <script>
+            var a = 5;
+            var b = 10;
+            var f = a/b;
+
+            document.getElementById("demo3").innerHTML =
+            "f = a : b" + "<br>" + "--> f = " + f;
+
+        </script>
+
+    <p>Phép căn bậc hai:</p>
+    <p id = "demo4"></p>
+        <script>
+            var a = 5;
+            var b = 10;
+            var g = Math.sqrt(5);
+            var h = Math.sqrt(10);
+           
+            document.getElementById("demo4").innerHTML =
+            "Căn hai của a = " + g + "<br>" + "Căn hai của b = " + h;
+        </script>
+        
+    <p>Phép lũy thừa:</p>
+    <p id="demo5"></p>
+        <script>
+            var a = 5;
+            var b = 10;
+            var i = a ** 2;
+            var k = b ** 2;
+    
+            document.getElementById("demo5").innerHTML =
+            "a ^ 2 =" + i + "<br>" + "b ^ 2 = " + k;
+
+        </script>
+
+    <p>Phép chia lấy dư:</p>
+    <p id="demo6"></p>
+        <script>
+            var a = 5;
+            var b = 10;
+            var l = a % b;
 
 
-        const pi = 3.14;
+            document.getElementById("demo6").innerHTML =
+            "phần dư của phép toán a : b =" + l;
+            
 
-        console.log(pi);
-
-    </script>
-
+        </script>
 </body>
 </html>

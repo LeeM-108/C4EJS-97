@@ -1,0 +1,27 @@
+Session 7:
+
+- Cú pháp:
+let biến = { } //object rỗng
+let biến = {
+	key: value,
+	key1: value,
+}
+
+- Key:		Không được trùng nhau, chỉ có kiểu dữ liệu String 
+	 	Nếu khai báo nhiều key trùng --> thì chỉ nhận key cuối.
+
+- Value:	Chứa giá trị key tương ứng, datatype bất kì.
+
+
+_THÊM: 	O.key mới = value; hoặc O.["key mới"] = value
+
+_SỬA: 	O.key cũ = value; hoặc O["key cũ"] = value;  	
+
+_XÓA: 	delete O["key"]; hoặc delete O.key;
+
+_Duyệt: for(const key in O) {
+
+	O[key]
+
+	}
+

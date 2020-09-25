@@ -1,0 +1,18 @@
+Session 8: FUNCTION 
+~ khai báo 1 lần, sử dụng nhiều lần mỗi khi được gọi đến.
+
+_Cú pháp:
+  
+	- Khai báo:
+	function tênF (ds tham số) {
+		//code
+	}
+	
+	- Sử dụng: ten F ();
+		   ten F (ds biến);
+
+_Return:
+~ để trả về kết quả trong Function
+
+return; --> undefined (dùng như break để dừng function)
+return biến; --> trả về biến đó
