@@ -70,30 +70,31 @@ let listPhones = [
 //  }
 // Cho người dùng nhập thêm một điên thoại mới với 3 thông tin và in ra:
 
-let newphone = {};
+// let newphone = {};
 
-listPhones.push (newphone);
+// listPhones.push (newphone);
 
-let newName = prompt("Nhập tên một điện thoại mới");
-newphone.name = newName;
-let newPrice = Number(prompt("Nhập giá điện thoại mới"));
-newphone.price = newPrice;
-let newBranch = prompt("Nhập hãng điện thoại mới");
-newphone.branch = newBranch;
+// let newName = prompt("Nhập tên một điện thoại mới");
+// newphone.name = newName;
+// let newPrice = Number(prompt("Nhập giá điện thoại mới"));
+// newphone.price = newPrice;
+// let newBranch = prompt("Nhập hãng điện thoại mới");
+// newphone.branch = newBranch;
  
-print(listPhones);
+// print(listPhones);
 
 // Cho người dùng nhập vào giá, in ra các điện thoại có giá lớn hơn nhập vào:
 
-// let enteredPrice = Number(prompt("Những điện thoại có giá lớn hơn: "));
-// let sPhones = [];
+let enteredPrice = Number(prompt("Những điện thoại có giá lớn hơn: "));
+let sPhones = [];
 
-// for (let i = 0; i < listPhones.length; i++) {
-//     const phone = listPhones[i];
-//     if (phone.price > enteredPrice) {
-//         sPhones.push(phone);      
-//     } 
-// }
+for (let i = 0; i < listPhones.length; i++) {
+    const phone = listPhones[i];
+    if (phone.price > enteredPrice) {
+        sPhones.push(phone);      
+    } 
+}
+print(sPhones);
 // if (sPhones.length > 0) {
     
 // console.log(`Có ${sPhones.length} kết quả`);
@@ -106,28 +107,28 @@ print(listPhones);
 
 // Cho người dùng nhập vào tên và in ra điện thoại:
 
-let enteredName = prompt("Nhập tên điện thoại: ");
-let namePhone = [];
+// let enteredName = prompt("Nhập tên điện thoại: ");
+// let namePhone = [];
 
-for (let i = 0; i < listPhones.length; i++) {
-    const phone = listPhones [i];
-    if ( phone.Name.toLowerCase().indexOf(enteredName.toLowerCase()) >= 0  ) {
-        namePhone.push(phone.Name);   
-    }   
-}
-console.log(namePhone);
+// for (let i = 0; i < listPhones.length; i++) {
+//     const phone = listPhones [i];
+//     if ( phone.Name.toLowerCase().indexOf(enteredName.toLowerCase()) >= 0  ) {
+//         namePhone.push(phone.Name);   
+//     }   
+// }
+// console.log(namePhone);
 
 //In tất cả điện thoại của hãng 1 hãng:
 
-let enteredBranch = prompt("Nhập tên hãng: ");
-let branchPhones = [];
+// let enteredBranch = prompt("Nhập tên hãng: ");
+// let branchPhones = [];
 
-for (let i = 0; i < listPhones.length; i++) {
-    const phone = listphone [i];
-    if (phone.branch.toLowerCase()) {
+// for (let i = 0; i < listPhones.length; i++) {
+//     const phone = listphone [i];
+//     if (phone.branch.toLowerCase()) {
         
-    }
-}
+//     }
+// }
 
 function print(list) {
     for (let i = 0; i < list.length; i++) {
